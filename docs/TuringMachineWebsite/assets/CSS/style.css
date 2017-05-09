@@ -1,0 +1,122 @@
+
+body{
+	background-color:lightgrey;
+}
+
+.title{
+	font-family:sans-serif;
+	font-weight:900;
+	font-size:5em;
+	color:#F6F6F6;
+	opacity:1;
+	position:fixed;
+	top:0px;
+}
+
+
+
+#myCanvas {
+  /* Set rules to fill background */
+  min-height:100%;
+  min-width: 1024px;
+  background-color:lightgrey;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height:auto;
+	
+  /* Set up positioning */
+  position:fixed;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+#topbar{
+	width:2000px;
+	height:107px;
+	background-color:#578FE4;
+	position:fixed;
+	z-index:1;
+	top:-10px;
+	left:-10px;
+	opacity:.99;
+}
+
+.lightFont{
+	color:#F6F6F6;
+}
+
+.darkFont{
+	color:#535353;
+}
+
+#members{
+	top:97px;
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+	max-width:940px;
+}
+.header{
+	color:#535353;
+	width:10em;
+	height:90px;
+	margin:0 auto;
+	position:relative;
+	font-family:sans-serif;
+	font-weight:900;
+	font-size:4.5em;
+}
+.fixedElement {
+    background-color: #c0c0c0;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+#footer{
+	display:inline-block;
+	position:relative;
+	margin-left:10px;
+}
+
+.about{
+	font-size:20px;
+	font-family:sans-serif;
+	font-color:#444E5E;
+}
+
+.memberProfile{
+	padding:1em;
+	background-color:#535353;
+	width:15em;
+	height:21em;
+	float:left;
+	margin: 6.1em;
+	margin-top:3em;
+	border-radius:10%;
+	color:white;
+}
+
+.headShot{
+	position:relative;
+	padding:1em;
+	width:10em;
+	height:10em;
+	border-radius:50%;
+	background-color:#578FE4;
+	margin:0 auto;
+}
+
+.bio{
+	margin-top:1em;
+	padding:.5em;
+	background-color:#A66859;
+	color:white;
+	font-family:sans-serif;
+	border-radius:10%;
+}
