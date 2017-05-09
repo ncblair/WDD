@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+	<head> 
+	<title>get</title>
+	    <link rel = "stylesheet" type = "text/css" href = "assets/CSS/testget.css"> 
+	    <link rel = "stylesheet" type = "text/css" href = "mystyle.css">
+	</head>
+	<body>
+		<img src = "assets/img/ForestBackground.jpg" id = "backgroundImage">
+		<div class = "title">calhat</div> 
+		<form action = "assets/PHP/testget.php" class = "formContainer" onsubmit = "return validateMyForm();">
+		<div class = "label" style = "margin:20px; margin-left:0; margin-top:0;"><u>Personal Information</u></div>
+			<div class = "queryPackage">
+				<div class = "label">Name</div>
+				<input class = "name" type = "text" name = "name" placeholder = "Oski Bear" onchange = "onChange(this)"><br>
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">Mobile Number</div>
+				<input name = "mobile" class = "mobile" type = "tel" placeholder = "(420)-666-6969" onchange = "onChange(this)"><br>
+			</div>
+			<!--
+			<div class = "queryPackage">
+				<div class = "label">Address</div>
+				<input name = "address1" class = "address1" type = "text" placeholder = "8008 Calhat Ave." onchange = "onChange(this)">
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">Address Line 2</div>
+				<input name = "address2" class = "address2" type = "text" placeholder = "Unit 1, Putnasty, Room 106" onchange = "onChange(this)">
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">City</div>
+				<input name = "city" class = "city" type = "text" placeholder = "Berkeley" onchange = "onChange(this)">
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">State</div>
+				<input name = "state" class = "state" type = "text" placeholder = "CA" onchange = "onChange(this)">
+			</div>
+			-->
+			<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<div class = "queryPackage">
+			     <div class = "label">Complex</div> 
+                <select name="college" class = "college" onchange = "onChange(this)">
+                  <option value="none"></option>
+                  <option value="unit1">unit 1</option>
+                  <option value="unit2">unit 2</option>
+                  <option value="unit3">unit 3</option>
+                  <option value="foothill">foothill</option>
+                  <option value="stern">stern</option>
+                  <option value="clarkkerr">clark kerr</option>
+                  <option value="martinez">martinez</option>
+                  <option value="channing">Channing-Bowditch</option>
+                  <option value="ida">Ida L. Jackson</option>
+                  <option value="manville">Manville</option>
+                  <option value="wada">Wada</option>
+            </select>
+             </div>
+             <!--
+			<div class = "queryPackage">
+				<div class = "label">College</div>
+				<input name = "college" class = "college" type = "text" placeholder = "Stevenson" onchange = "onChange(this)">
+			</div>
+			-->
+			<div class = "queryPackage">
+			    <div class = "label">Building</div>
+			    <!--
+				<input name = "building" class = "building" type = "text" placeholder = "1" onchange = "onChange(this)">
+				-->
+				    <select class = "building" name="building" onchange = "onChange(this)">
+                        <option value="none"></option>
+                        <option value="Beverly_Cleary">Beverly Cleary</option>
+                        <option value="Building_1">Building 1</option>
+                        <option value="Building_2">Building 2</option>
+                        <option value="Building_3">Building 3</option>
+                        <option value="Building_4">Building 4</option>
+                        <option value="Building_5">Building 5</option>
+                        <option value="Building_6">Building 6</option>
+                        <option value="Building_7">Building 7</option>
+                        <option value="Building_8">Building 8</option>
+                        <option value="Building_9">Building 9</option>
+                        <option value="Building_10">Building 10</option>
+                        <option value="Building_11">Building 11</option>
+                        <option value="Building_12">Building 12</option>
+                        <option value="Building_13">Building 13</option>
+                        <option value="Building_14">Building 14</option>
+                        <option value="Building_15">Building 15</option>
+                        <option value="Building_16">Building 16</option>
+                        <option value="Building_17">Building 17</option>
+                        <option value="Cheney">Cheney</option>
+                        <option value="Christian">Christian</option>
+                        <option value="Cunningham">Cunningham</option>
+                        <option value="Davidson">Davidson</option>
+                        <option value="Deutsch">Deutsch</option>
+                        <option value="Ehrman">Ehrman</option>
+                        <option value="Freeborn">Freeborn</option>
+                        <option value="Griffiths">Griffiths</option>
+                        <option value="Hillside">Hillside</option>
+                        <option value="Ida_Sproul">Ida Sproul</option>
+                        <option value="La_Loma">La Loma</option>
+                        <option value="Norton">Norton</option>
+                        <option value="Priestley">Priestley</option>
+                        <option value="Putnam">Putnam</option>
+                        <option value="Slottman">Slottman</option>
+                        <option value="Spens-Black">Spens-Black</option>
+                        <option value="Towle">Towle</option>
+                        <option value="Wada">Wada</option>
+                    </select>
+                    <br>
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">Room Number</div>
+				<input name = "roomNum" class = "roomNum" type = "text" placeholder = "1" onchange = "onChange(this)">
+			</div>
+			<div class = "label" style = "margin:20px; margin-left:0; margin-top:0;"><u>Delivery Information</u></div>
+			<div class = "queryPackage">
+				<div class = "label">Date</div>
+				<input name = "date" class = "date" type = "text" placeholder = "04/20/2017" onchange = "onChange(this)">
+			</div>
+			<div class = "queryPackage">
+				<div class = "label">Time</div>
+				<div class = "choicesBox">
+					<div class = "butt time">3-4</div>
+					<div class = "butt time">4-5</div>
+					<div class = "butt time">5-6</div>
+					<div class = "butt time">6-7</div>
+					<div class = "butt time">7-8</div>
+					<div class = "butt time">8-9</div>
+					<div class = "butt time">9-10</div>
+				</div>
+			</div>
+			<input style = "display:none;" name = "time" class = "hiddenTime" type = "text">
+			<div class = "queryPackage">
+				<div class = "label" style = "clear:left">Color</div>
+				<div class = "choicesBox">
+					<div class = "butt color" style = "background-color:pink; clear:left;"></div>
+					<div class = "butt color" style = "background-color:white;"></div>
+					<div class = "butt color" style = "background-color:navy;"></div>
+					<div class = "butt color" style = "background-color:green;"></div>
+				</div>
+			</div>
+			<input style = "display:none;" name = "color" class = "hiddenColor" type = "text">
+			<div class = "queryPackage">
+				<div class = "label" style = "clear:left;">Quantity</div>
+				<input name = "quantity" class = "quantity" type = "tel" placeholder = "2" onchange = "onChange(this)">
+			</div>
+			<div class = "submit" style = "clear:left;">
+				<input type = submit class = "submitButt">
+				<div class = "price"></div>
+			</div>
+		</form>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/JS/testget.js"></script>
+</html>

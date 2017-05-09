@@ -1,0 +1,221 @@
+body{
+	background-color:#141414;
+}
+#backgroundImage{
+	margin:5% auto;
+	min-width:1200px;
+	min-height:120%;
+	width:100%;
+	height:auto;
+	position:fixed;
+	z-index:-1;
+	left:0;
+	top:-10em;
+}
+@media screen and (max-width: 1200px) { /* Specific to this particular image */
+  #backgroundImage {
+    left: 50%;
+    margin-left: -600px;   /* 50% */
+  }
+}
+.title{
+	font-size:3em;
+	text-align:center;
+	margin:10px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#1C1C1C;
+}
+
+.formContainer{
+	background-color:#F7F7F7;
+	padding: 16px;
+	padding-bottom:100px;
+	border-radius:10px;
+	margin:auto;
+	width:35%;
+	min-width:355px;
+}
+.quantity{
+	width:20px;
+}
+
+.queryPackage{
+	margin:10px;
+	margin-right:5px;
+}
+
+
+.label{
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:15px;
+}
+.name{
+	width:200px;
+}
+.mobile{
+	width:130px;
+}
+.address1{
+	width:300px;
+}
+.address2{
+	width:300px;
+}
+.city{
+	width:200px;
+}
+.state{
+	width:150px;
+}
+.date{
+	width:87px;
+}
+.college{
+	width:150px;
+}
+.building{
+    width:150px;
+}
+.roomNum{
+    width:30px;
+}
+.text{
+	float:right;
+
+}
+.submitButt{
+	line-height:66px;
+	float:left;
+	height:66px;
+	width:100px;
+	text-align:center;
+	border:1px solid grey;
+	padding:.1px;
+	background-color:#009DF7;
+	font-family:sans-serif;
+	font-size:15px;
+	border-radius:10%;
+	color:#F7F7F7;
+	cursor:pointer;
+	margin:10px;
+	-webkit-appearance:none;
+}
+.submitButt:hover{
+	color:lightgrey;
+}
+
+select{
+    background:#ffffff;
+    width:96%;
+    border:none;
+    outline:none;
+    height:30px;
+}
+
+.price{
+	float:right;
+	line-height:100px;
+	text-align:center;
+	font-family:sans-serif;
+	font-size:15px;
+
+}
+
+.form{
+	d:false;
+}
+
+input{
+	outline:none;
+	resize:none;
+	font-size:15px;
+	padding-left:10px;
+	margin:2px;
+	color:white;
+	border-radius:4px;
+	border:none;
+}
+input[type=text] {
+	height:50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+/*
+@media only screen and (max-device-width: 480px) {
+    input[type = text]{
+        width:96%;
+    }
+    input[type = tel]{
+        width:96%;
+    }
+    select{
+        width:96%;
+    }
+}
+*/
+
+input[type=text]:focus {
+    width: 96%;
+    background-color:lightblue;
+}
+input[type=tel]:focus {
+    width: 96%;
+    background-color:lightblue;
+}
+input[type=tel] {
+	height:50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.choicesBox{
+	clear:left;
+}
+
+#slughatDorms{
+
+}
+
+.butt{
+	line-height:25px;
+	float:left;
+	height:25px;
+	width:45px;
+	text-align:center;
+	border:1px solid black;
+	padding:.1px;
+	background-color:white;
+	font-family:sans-serif;
+	font-size:15px;
+	border-radius:10%;
+	margin-right:1px;
+	margin-bottom:14px;
+}
+
+.butt:hover{
+	-moz-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px)
+}
+.goodInput{
+    background-color:#00C490;
+    color:white;
+}
+.goodInputButt{
+	border-color: #00C490;
+    -moz-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px)
+
+}
+
+.badInput{
+	background-color:#FF7A7B;
+	color:white;
+}
